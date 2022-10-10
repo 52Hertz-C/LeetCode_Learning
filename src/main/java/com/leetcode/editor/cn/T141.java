@@ -43,27 +43,16 @@ package com.leetcode.editor.cn;
 
 import com.leetcode.editor.cn.config.ListNode;
 
-public class T141{
-    
+public class T141 {
+
 //leetcode submit region begin(Prohibit modification and deletion)
-/**
- * Definition for singly-linked list.
- * class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode(int x) {
- *         val = x;
- *         next = null;
- *     }
- * }
- */
     public boolean hasCycle(ListNode head) {
         ListNode fast = head;
         ListNode slow = head;
-        while(fast!=null&&fast.next!=null){
+        while (fast != null && fast.next != null) {
             fast = fast.next.next;
             slow = slow.next;
-            if(fast==slow){
+            if (fast == slow) {
                 return true;
             }
         }
