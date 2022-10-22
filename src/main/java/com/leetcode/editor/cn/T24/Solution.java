@@ -1,4 +1,4 @@
-package com.leetcode.editor.cn;
+package com.leetcode.editor.cn.T24;
 
 //给定一个链表，两两交换其中相邻的节点，并返回交换后的链表。 
 //
@@ -15,7 +15,7 @@ package com.leetcode.editor.cn;
 
 import com.leetcode.editor.cn.config.ListNode;
 
-public class T24{
+public class Solution {
     
 
 

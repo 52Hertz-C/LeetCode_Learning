@@ -1,4 +1,4 @@
-package com.leetcode.editor.cn;
+package com.leetcode.editor.cn.T21;
 
 //将两个升序链表合并为一个新的升序链表并返回。新链表是通过拼接给定的两个链表的所有节点组成的。 
 //
@@ -12,9 +12,7 @@ package com.leetcode.editor.cn;
 
 import com.leetcode.editor.cn.config.ListNode;
 
-import java.util.Arrays;
-
-public class T21{
+public class Solution {
 
     public static ListNode mergeTwoLists(ListNode list1, ListNode list2) {
         if (list1 == null) {

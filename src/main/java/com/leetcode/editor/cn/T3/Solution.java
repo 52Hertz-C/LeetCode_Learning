@@ -1,4 +1,4 @@
-package com.leetcode.editor.cn;
+package com.leetcode.editor.cn.T3;
 
 //给定一个字符串 s ，请你找出其中不含有重复字符的 最长子串 的长度。
 //
@@ -44,7 +44,7 @@ package com.leetcode.editor.cn;
 import java.util.HashMap;
 import java.util.Map;
 
-class T3 {
+public class Solution {
     public int lengthOfLongestSubstring(String s) {
         if (s.length() == 0) {
             return 0;

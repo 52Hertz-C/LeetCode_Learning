@@ -1,4 +1,4 @@
-package com.leetcode.editor.cn;
+package com.leetcode.editor.cn.T1;
 
 //给定一个整数数组 nums 和一个目标值 target，请你在该数组中找出和为目标值的那 两个 整数，并返回他们的数组下标。 
 //
@@ -16,7 +16,7 @@ package com.leetcode.editor.cn;
 
 import org.junit.Test;
 
-public class T1{
+public class Solution{
     @Test
     public void test() {
         int[] nums = {0,3,-3,4,-1};

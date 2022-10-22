@@ -1,4 +1,4 @@
-package com.leetcode.editor.cn;
+package com.leetcode.editor.cn.T20;
 
 //给定一个只包括 '('，')'，'{'，'}'，'['，']' 的字符串 s ，判断字符串是否有效。
 //
@@ -54,7 +54,7 @@ import java.util.Map;
 import java.util.Stack;
 
 //leetcode submit region begin(Prohibit modification and deletion)
-class T20 {
+public class Solution {
     public static boolean isValid(String s) {
         if (s == null || s.length() == 0) {
             return true;

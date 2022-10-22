@@ -1,4 +1,4 @@
-package com.leetcode.editor.cn;
+package com.leetcode.editor.cn.T19;
 
 //给你一个链表，删除链表的倒数第 n 个结点，并且返回链表的头结点。
 //
@@ -57,7 +57,7 @@ import com.leetcode.editor.cn.config.ListNode;
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
-public class T19 {
+public class Solution {
     public ListNode removeNthFromEnd(ListNode head, int n) {
         ListNode dummy = new ListNode(0, head);
 

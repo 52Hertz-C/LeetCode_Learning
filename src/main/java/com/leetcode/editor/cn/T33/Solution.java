@@ -1,4 +1,4 @@
-package com.leetcode.editor.cn;
+package com.leetcode.editor.cn.T33;
 
 //整数数组 nums 按升序排列，数组中的值 互不相同 。
 //
@@ -48,7 +48,7 @@ package com.leetcode.editor.cn;
 
 
 //leetcode submit region begin(Prohibit modification and deletion)
-public class T33 {
+public class Solution {
     public int search(int[] nums, int target) {
         int len = nums.length;
         if(len == 0) return -1;

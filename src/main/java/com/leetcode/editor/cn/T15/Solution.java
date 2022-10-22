@@ -1,4 +1,4 @@
-package com.leetcode.editor.cn;
+package com.leetcode.editor.cn.T15;
 
 //给你一个整数数组 nums ，判断是否存在三元组 [nums[i], nums[j], nums[k]] 满足 i != j、i != k 且 j != k
 // ，同时还满足 nums[i] + nums[j] + nums[k] == 0 。请
@@ -57,7 +57,7 @@ import java.util.Arrays;
 import java.util.List;
 
 //leetcode submit region begin(Prohibit modification and deletion)
-public class T15 {
+public class Solution {
     public List<List<Integer>> threeSum(int[] nums) {
         int length = nums.length;
         Arrays.sort(nums);

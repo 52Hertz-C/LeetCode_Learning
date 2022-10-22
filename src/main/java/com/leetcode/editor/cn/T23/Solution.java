@@ -1,4 +1,4 @@
-package com.leetcode.editor.cn;
+package com.leetcode.editor.cn.T23;
 
 //合并 k 个排序链表，返回合并后的排序链表。请分析和描述算法的复杂度。 
 //
@@ -16,9 +16,7 @@ package com.leetcode.editor.cn;
 
 import com.leetcode.editor.cn.config.ListNode;
 
-import java.util.Arrays;
-
-public class T23{
+public class Solution {
 
     public static ListNode mergeKLists(ListNode[] lists) {
         if (lists.length == 0) {

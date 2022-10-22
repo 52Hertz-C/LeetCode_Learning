@@ -1,4 +1,4 @@
-package com.leetcode.editor.cn;
+package com.leetcode.editor.cn.T22;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -40,7 +40,7 @@ import java.util.List;
 
 
 //leetcode submit region begin(Prohibit modification and deletion)
-public class T22 {
+public class Solution {
     public static List<String> generateParenthesis(int n) {
         List<String> res = new ArrayList<>();
         backtrack(res, new StringBuilder(), 0, 0, n);

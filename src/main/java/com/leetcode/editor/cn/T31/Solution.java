@@ -1,4 +1,4 @@
-package com.leetcode.editor.cn;
+package com.leetcode.editor.cn.T31;
 
 //整数数组的一个 排列 就是将其所有成员以序列或线性顺序排列。
 //
@@ -55,7 +55,7 @@ package com.leetcode.editor.cn;
 
 
 //leetcode submit region begin(Prohibit modification and deletion)
-public class T31 {
+public class Solution {
     public void nextPermutation(int[] nums) {
         if (nums.length == 0) {
             return;

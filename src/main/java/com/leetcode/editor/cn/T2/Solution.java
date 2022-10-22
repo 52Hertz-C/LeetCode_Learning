@@ -1,4 +1,4 @@
-package com.leetcode.editor.cn;
+package com.leetcode.editor.cn.T2;
 
 //给你两个 非空 的链表，表示两个非负的整数。它们每位数字都是按照 逆序 的方式存储的，并且每个节点只能存储 一位 数字。
 //
@@ -45,7 +45,7 @@ package com.leetcode.editor.cn;
 import com.leetcode.editor.cn.config.ListNode;
 
 //leetcode submit region begin(Prohibit modification and deletion)
-public class T2 {
+public class Solution {
     public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode root = new ListNode(0);
         ListNode cursor = root;

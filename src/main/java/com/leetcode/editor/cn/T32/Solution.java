@@ -1,4 +1,4 @@
-package com.leetcode.editor.cn;
+package com.leetcode.editor.cn.T32;
 
 //给你一个只包含 '(' 和 ')' 的字符串，找出最长有效（格式正确且连续）括号子串的长度。
 //
@@ -44,7 +44,7 @@ package com.leetcode.editor.cn;
 
 
 //leetcode submit region begin(Prohibit modification and deletion)
-public class T32 {
+public class Solution {
     public static int longestValidParentheses(String s) {
         if (s == null || s.length() == 0) {
             return 0;

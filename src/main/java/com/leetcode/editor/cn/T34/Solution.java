@@ -1,4 +1,4 @@
-package com.leetcode.editor.cn;
+package com.leetcode.editor.cn.T34;
 
 //给你一个按照非递减顺序排列的整数数组 nums，和一个目标值 target。请你找出给定目标值在数组中的开始位置和结束位置。
 //
@@ -41,7 +41,7 @@ package com.leetcode.editor.cn;
 
 
 //leetcode submit region begin(Prohibit modification and deletion)
-public class T34 {
+public class Solution {
     public static void main(String[] args) {
         int[] nums = new int[]{5,7,7,8,8,10};
         int[] ints = searchRange(nums, 8);
