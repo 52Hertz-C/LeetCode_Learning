@@ -37,8 +37,44 @@ package com.leetcode.editor.cn.T48;
 
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
-    public void rotate(int[][] matrix) {
+    public static void rotate(int[][] matrix) {
+        if (matrix.length == 0) {
+            return;
+        }
+        int n = matrix.length;
+        // 水平翻转
+        for (int i = 0; i < n / 2; i++) {
+            for (int j = 0; j < n; j++) {
+                int tmp = matrix[i][j];
+                matrix[i][j] = matrix[n - i - 1][j];
+                matrix[n - i - 1][j] = tmp;
+            }
+        }
+        // 对角线翻转
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < i; j++) {
+                int tmp = matrix[i][j];
+                matrix[i][j] = matrix[j][i];
+                matrix[j][i] = tmp;
+            }
+        }
+    }
 
+    public static void main(String[] args) {
+        int[] a = new int[]{1,2,3};
+        int[] b = new int[]{4,5,6};
+        int[] c = new int[]{7,8,9};
+        int[][] matrix = new int[3][3];
+        matrix[0][0] = 1;
+        matrix[0][1] = 2;
+        matrix[0][2] = 3;
+        matrix[1][0] = 4;
+        matrix[1][1] = 5;
+        matrix[1][2] = 6;
+        matrix[2][0] = 7;
+        matrix[2][1] = 8;
+        matrix[2][2] = 9;
+        rotate(matrix);
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
