@@ -46,31 +46,33 @@ package com.leetcode.editor.cn;
 // 👍 2211 👎 0
 
 
+import java.util.ArrayDeque;
 import java.util.ArrayList;
+import java.util.Deque;
 import java.util.List;
 
 //leetcode submit region begin(Prohibit modification and deletion)
 public class T39 {
     public static List<List<Integer>> combinationSum(int[] candidates, int target) {
         List<List<Integer>> res = new ArrayList<List<Integer>>();
-        List<Integer> combine = new ArrayList<Integer>();
+        Deque<Integer> combine = new ArrayDeque<>();
         dfs(candidates, 0, candidates.length, target, res, combine);
         return res;
     }
 
-    public static void dfs(int[] candidates, int index, int len, int target, List<List<Integer>> ans, List<Integer> combine) {
+    public static void dfs(int[] candidates, int index, int len, int target, List<List<Integer>> ans, Deque<Integer> path) {
 
         if (target < 0) {
             return;
         }
         if (target == 0) {
-            ans.add(combine);
+            ans.add(new ArrayList<>(path));
             return;
         }
         for (int i = index; i < len; i++) {
-            combine.add(candidates[i]);
-            dfs(candidates, i, len, target - candidates[i], ans, combine);
-            combine.la();
+            path.addLast(candidates[i]);
+            dfs(candidates, i, len, target - candidates[i], ans, path);
+            path.removeLast();
         }
     }
 
