@@ -1,4 +1,4 @@
-package com.leetcode.editor.cn;
+package com.leetcode.editor.cn.T74;
 
 //编写一个高效的算法来判断 m x n 矩阵中，是否存在一个目标值。该矩阵具有如下特性： 
 //
@@ -34,7 +34,7 @@ package com.leetcode.editor.cn;
 
 import java.util.Arrays;
 
-public class T74{
+public class Solution {
     public static void main(String[] args) {
         int[][] a = {{1}};
 //        int[][] a = {{1,3,5,7},{10,11,16,20},{23,30,34,50}};
